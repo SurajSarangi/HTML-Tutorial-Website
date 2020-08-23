@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Images</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <h1>HTML Tutorial</h1>
+        </div>
+        <div class="right"><img src="logo1.png" alt=""></div>
+    </div>
+    <div class="sidenav">
+        <a href="z_quiz1.html"><b>QUIZ 1</b></a>
+        <a href="z_quiz2.html"><b>QUIZ 2</b></a>
+        <a href="z_assignments.html"><b>ASSIGNMENTS</b></a>
+        <a><em>&nbsp---&nbspCONTENT&nbsp---&nbsp&nbsp</em> </a>
+
+        <a href="index.html">Introduction</a>
+        <a href="z_editors.html">HTML Editors</a>
+        <a href="z_basic-tags.html">Basic HTML Tags</a>
+        <a class="subtag" href="z_basic-tags.html#headtag">Heading Tags</a>
+        <a class="subtag" href="z_basic-tags.html#paratag">Paragraph Tags</a>
+        <a class="subtag" href="z_basic-tags.html#lbtag">Line Break Tag</a>
+        <a class="subtag" href="z_basic-tags.html#horline">Horizontal Lines</a>
+        <a class="subtag" href="z_basic-tags.html#presfor">Preserve Formatting</a>
+        <a href="z_Links.html">Links</a>
+        <a class="active" href="#">Images</a>
+        <a href="z_formatting.html">Formatting</a>
+
+        <a href="z_tables.html">Tables</a>
+        <a class="subtag" href="z_tables.html#heading">Heading</a>
+        <a class="subtag" href="z_tables.html#colspan">Colspan and Rowspan</a>
+        <a class="subtag" href="z_tables.html#backgrounds">Backgrounds</a>
+        <a class="subtag" href="z_tables.html#height">Height and Width</a>
+        <a class="subtag" href="z_tables.html#header">Header, Body, and Footer</a>
+        <a href="z_lists.html">Lists</a>
+        <a class="subtag" href="z_lists.html">Unordered List</a>
+        <a class="subtag" href="z_lists.html#typeul">UL Types</a>
+        <a class="subtag" href="z_lists.html#ol">Ordered List</a>
+        <a class="subtag" href="z_lists.html#typeol">OL Types</a>
+        <a href="z_div-span-form.html">Div</a>
+        <a href="z_div-span-form.html#span">Span</a>
+        <a href="z_div-span-form.html#form">Forms</a>
+        <a class="subtag" href="z_div-span-form.html#fieldset">Fieldset</a>
+        <a class="subtag" href="z_div-span-form.html#legend">Legend</a>
+        <a class="subtag" href="z_div-span-form.html#label">Label</a>
+        <a class="subtag" href="z_div-span-form.html#input">Input</a>
+        <a class="subtag" href="z_div-span-form.html#select">Select</a>
+        <a class="subtag" href="z_div-span-form.html#datalist">Datalist</a>
+        <a class="subtag" href="z_div-span-form.html#textarea">Textarea</a>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>HTML Images</h2>
+            <p>Images are very important to beautify as well as to depict many complex concepts in simple way on your
+                web page. This tutorial will take you through simple steps to use images in your web pages.</p>
+            <h2>Insert Image</h2>
+            <p>You can insert any image in your web page by using <b>&lt;img&gt;</b> tag. Following is the simple syntax
+                to use this tag.</p><br>
+            <pre>&lt;img src = "Image URL" ... attributes-list/&gt;</pre><br>
+            <p>The &lt;img&gt; tag is an empty tag, which means that, it can contain only list of attributes and it has
+                no closing tag.</p>
+
+            <h3>For example:</h3><br>
+            <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Using Image in Webpage&lt;/title&gt;
+                    &lt;/head&gt;
+	
+                    &lt;body&gt;
+                        &lt;p&gt;Simple Image Insert&lt;/p&gt;
+                        &lt;img src = "z_future-tech.png" alt = "Test Image" /&gt;
+                    &lt;/body&gt;
+	
+                &lt;/html&gt;
+            </code>
+            </pre>
+            <br> <br>
+            <p>This will produce the following result &minus;</p>
+            <br>
+            <div class="output">
+                <p><img alt="View in Browser" style="height:300px;width:500px" src="z_future-tech.png"></p><br>
+            </div>
+            <br>
+
+            <ul style="list-style-type:disc">
+                <li>
+                    <p>
+                        You can use PNG, JPEG or GIF image file based on your comfort but make sure you specify correct
+                        image file name in
+                        <b>src</b> attribute. Image name is always case sensitive.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <b>alt</b> attribute is a mandatory attribute which specifies an alternate text for an
+                        image, if the image cannot
+                        be displayed.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We must keep the image and the html file in the same directory otherwise we have to navigate to
+                        the directory where
+                        the image is present by using /.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We can set image width and height based on your requirement using <b>width</b> and <b>height</b>
+                        attributes.
+                        We can specify width and height of the image in terms of either pixels or percentage of its
+                        actual size.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        By default, image will have a border around it, you can specify border thickness in terms of
+                        pixels using
+                        border attribute. A thickness of 0 means, no border around the picture.
+                    </p>
+                </li>
+                <li>
+                    <p>By default, image will align at the left side of the page, but you can use <b>align</b> attribute
+                        to set it in the center or right.</p>
+                </li>
+            </ul>
+        </div>
+        <footer id="footer">
+            Created by:<br>
+            B418034 &nbsp&nbsp
+            B418055 &nbsp&nbsp
+            B418056 &nbsp&nbsp
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
