@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Div Span Forms</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <h1>HTML Tutorial</h1>
+        </div>
+        <div class="right"><img src="logo1.png" alt=""></div>
+
+    </div>
+    <div class="sidenav">
+        <a href="z_quiz1.html"><b>QUIZ 1</b></a>
+        <a href="z_quiz2.html"><b>QUIZ 2</b></a>
+        <a href="z_assignments.html"><b>ASSIGNMENTS</b></a>
+        <a><em>&nbsp---&nbspCONTENT&nbsp---&nbsp&nbsp</em> </a>
+
+        <a href="index.html">Introduction</a>
+        <a href="z_editors.html">HTML Editors</a>
+        <a href="z_basic-tags.html">Basic HTML Tags</a>
+        <a class="subtag" href="z_basic-tags.html#headtag">Heading Tags</a>
+        <a class="subtag" href="z_basic-tags.html#paratag">Paragraph Tags</a>
+        <a class="subtag" href="z_basic-tags.html#lbtag">Line Break Tag</a>
+        <a class="subtag" href="z_basic-tags.html#horline">Horizontal Lines</a>
+        <a class="subtag" href="z_basic-tags.html#presfor">Preserve Formatting</a>
+        <a href="z_links.html">Links</a>
+        <a href="z_img.html">Images</a>
+        <a href="z_formatting.html">Formatting</a>
+
+        <a href="z_tables.html">Tables</a>
+        <a class="subtag" href="z_tables.html#heading">Heading</a>
+        <a class="subtag" href="z_tables.html#colspan">Colspan and Rowspan</a>
+        <a class="subtag" href="z_tables.html#backgrounds">Backgrounds</a>
+        <a class="subtag" href="z_tables.html#height">Height and Width</a>
+        <a class="subtag" href="z_tables.html#header">Header, Body, and Footer</a>
+        <a href="z_lists.html">Lists</a>
+        <a class="subtag" href="z_lists.html">Unordered List</a>
+        <a class="subtag" href="z_lists.html#typeul">UL Types</a>
+        <a class="subtag" href="z_lists.html#ol">Ordered List</a>
+        <a class="subtag" href="z_lists.html#typeol">OL Types</a>
+        <a class="active" href="z_div-span-form.html">Div</a>
+        <a class="active" href="z_div-span-form.html#span">Span</a>
+        <a class="active" href="z_div-span-form.html#form">Forms</a>
+        <a class="subtag" href="z_div-span-form.html#fieldset">Fieldset</a>
+        <a class="subtag" href="z_div-span-form.html#legend">Legend</a>
+        <a class="subtag" href="z_div-span-form.html#label">Label</a>
+        <a class="subtag" href="z_div-span-form.html#input">Input</a>
+        <a class="subtag" href="z_div-span-form.html#select">Select</a>
+        <a class="subtag" href="z_div-span-form.html#datalist">Datalist</a>
+        <a class="subtag" href="z_div-span-form.html#textarea">Textarea</a>
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>Div</h2>
+            <p>
+                The div tag is used for defining a section of your document. With the div tag, you can group large
+                sections of HTML elements together and format them with CSS. Div can be used extensibly with id and
+                class attributes.<br><br>
+
+                The difference between the div tag and the span tag is that the div tag is used with blocklevel elements
+                whilst the span tag is used with inline elements.
+            </p>
+            <h3>For example:</h3>
+            <pre>
+    			<code>
+&lt;div&gt;This is a div&lt;/div&gt;
+&lt;div id=&quot;div2&quot;&gt;This is a div as well&lt;/div&gt;
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div id="span" class="output">
+                <div>This is a div</div>
+                <div id="div2">This is a div as well</div>
+            </div><br><br>
+
+            <h2>Span</h2>
+            <p>
+                The HTML tag is used for grouping and applying styles to inline elements.<br><br>
+
+                This doesnt take up the entire line. Takes up only as much space as the content in it.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;span&gt;This is one span.&lt;/span&gt;
+&lt;span&gt;This is another span.&lt;/span&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div id="form" class="output">
+                <span>This is one span.</span>
+                <span>This is another span.</span>
+            </div><br><br>
+
+            <h2>Forms</h2>
+            <p>
+                HTML Forms are required, when you want to collect some data from the site visitor. For example, during
+                user registration you would like to collect information such as name, email address, credit card, etc.
+
+                A form will take input from the site visitor and then will post it to a back-end application such as
+                CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the
+                passed data based on defined business logic inside the application.
+
+                There are various form elements available like text fields, textarea fields, drop-down menus, radio
+                buttons, checkboxes, etc.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;form action = &quot;Script URL&quot; method = &quot;GET|POST&quot;&gt;
+	form elements like input, textarea etc.
+&lt;/form&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <form action="Script URL" method="GET|POST">
+                    form elements like input, textarea etc.
+                </form><br><br>
+            </div>
+            <div class="output">
+                There are some important attributes associated with forms that control its behaviour.
+                <ol>
+                    <li>
+                        <h4>action</h3>
+                            <p>Backend script ready to process your passed data</p>
+                    </li>
+                    <li>
+                        <h4>method</h3>
+                            <p>Method to be used to upload data. The most frequently used are GET and POST methods.</p>
+                    </li>
+                    <li>
+                        <h4>target</h3>
+                            <p>Specify the target window or frame where the result of the script will be displayed. It
+                                takes values like _blank, _self, _parent etc.</p>
+                    </li>
+                </ol>
+            </div><br><br>
+            <p id="fieldset">
+                Form has several tags associated to it. Let's take a look at them.
+            </p>
+            <br><br>
+
+            <h2>Fieldset</h2>
+            <p>
+                It is used to create a border around the form specifying the field in which the form is present.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;form&gt;
+		form elements like input, textarea etc.
+	&lt;/form&gt;
+&lt;/fieldset&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <form id="legend">
+                        form elements like input, textarea etc.
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Legend</h2>
+            <p>
+                Legend is used to give a heading to the form on the border provided by fieldset
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;legend&gt;Form 1&lt;legend&gt;
+	&lt;form&gt;
+		form elements like input, textarea etc.
+	&lt;/form&gt;
+&lt;/fieldset&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>Form 1</legend>
+                    <form id="label">
+                        form elements like input, textarea etc.
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Label</h2>
+            <p>
+                Label tag is used to specify what is the value to provide while taking input. We can give details about
+                the type of input we want to take in label.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;legend&gt;label&lt;/legend&gt;
+	&lt;form&gt;
+		&lt;label&gt;Name(string):&lt;/label&gt;&lt;br&gt;
+		&lt;label&gt;Age(number):&lt;/label&gt;
+	&lt;/form&gt;
+&lt;/fieldset&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>label</legend>
+                    <form>
+                        <label>Name(string):</label><br>
+                        <label id="input">Age(number):</label>
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Input</h2>
+            <p>
+                Input tag is used to allow the user to write andd we can use this data for any purpose we want.
+                Input has the following attributes which determine its behaviour.
+            <div class="output">
+                <ol>
+                    <li>
+                        <h4>type</h4>
+                        <p>Indicates the type of input control and for text input control it will be set to text.</p>
+                    </li>
+                    <li>
+                        <h4>name</h4>
+                        <p>Used to give a name to the control which is sent to the server to be recognized and get the
+                            value.</p>
+                    </li>
+                    <li>
+                        <h4>value</h4>
+                        <p>This can be used to provide an initial value inside the control.</p>
+                    </li>
+                    <li>
+                        <h4>size</h4>
+                        <p>Allows to specify the width of the text-input control in terms of characters.</p>
+                    </li>
+                    <li>
+                        <h4>maxlength</h4>
+                        <p>Allows to specify the maximum number of characters a user can enter into the text box.</p>
+                    </li>
+                </ol>
+            </div><br><br>
+            The type attribute is very important and is used to specify the type of input we take.
+            <div class="output">
+                <ol>
+                    <li>
+                        <h4>text</h4>
+                        <p>Default. Defines a single-line text field.</p>
+                    </li>
+                    <li>
+                        <h4>number</h4>
+                        <p>Defines a field for entering a number</p>
+                    </li>
+                    <li>
+                        <h4>date</h4>
+                        <p>Defines a date control (year, month, day (no time))</p>
+                    </li>
+                    <li>
+                        <h4>radio</h4>
+                        <p>Defines a radio button</p>
+                    </li>
+                    <li>
+                        <h4>checkbox</h4>
+                        <p>Defines a checkbox</p>
+                    </li>
+                    <li>
+                        <h4>email</h4>
+                        <p>Defines a field for an e-mail address</p>
+                    </li>
+                    <li>
+                        <h4>url</h4>
+                        <p>Defines a field for entering a URL</p>
+                    </li>
+                    <li>
+                        <h4>button</h4>
+                        <p>Defines a clickable button</p>
+                    </li>
+                    <li>
+                        <h4>submit</h4>
+                        <p> Defines a submit button</p>
+                    </li>
+                    <li>
+                        <h4>image</h4>
+                        <p>Defines an image as the submit button</p>
+                    </li>
+                    <li>
+                        <h4>password</h4>
+                        <p> Defines a password field</p>
+                    </li>
+                    <li>
+                        <h4>range</h4>
+                        <p>Defines a range control (like a slider control)</p>
+                    </li>
+                    <li>
+                        <h4>reset</h4>
+                        <p>Defines a reset button</p>
+                    </li>
+                    <li>
+                        <h4>file</h4>
+                        <p>Defines a file-select field and a "Browse" button</p>
+                    </li>
+                    <li>
+                        <h4>color</h4>
+                        <p>Defines a color picker</p>
+                    </li>
+                </ol>
+            </div>
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+  &lt;legend&gt;Input Type&lt;/legend&gt;
+  &lt;form&gt;
+	&lt;label&gt;Text:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Number:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;number&quot; name=&quot;number&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Date:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;date&quot; name=&quot;date&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Radio:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Checkbox:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Email:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+	&lt;label&gt;URL:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;url&quot; name=&quot;url&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Button:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;button&quot; name=&quot;button&quot; value=&quot;Send&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Submit:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;submit&quot; name=&quot;submit&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Password:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Range:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;range&quot; name=&quot;range&quot;&gt;&lt;br&gt;
+	&lt;label&gt;File:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;file&quot; name=&quot;file&quot;&gt;&lt;br&gt;
+	&lt;label&gt;Color:&lt;/label&gt;&lt;br&gt;&lt;input type=&quot;color&quot; name=&quot;color&quot;&gt;&lt;br&gt;
+  &lt;/form&gt;
+&lt;/fieldset&gt;    				
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>Input type</legend>
+                    <form>
+                        <label>Text:</label><br><input type="text" name="name"><br>
+                        <label>Number:</label><br><input type="number" name="number"><br>
+                        <label>Date:</label><br><input type="date" name="date"><br>
+                        <label>Radio:</label><br><input type="radio" name="radio"><br>
+                        <label>Checkbox:</label><br><input type="checkbox" name="checkbox"><br>
+                        <label>Email:</label><br><input type="email" name="email"><br>
+                        <label>URL:</label><br><input type="url" name="url"><br>
+                        <label>Button:</label><br><input type="button" name="button" value="Send"><br>
+                        <label>Submit:</label><br><input type="submit" name="submit"><br>
+                        <label>Password:</label><br><input type="password" name="password"><br>
+                        <label>Range:</label><br><input type="range" name="range"><br>
+                        <label>File:</label><br><input type="file" name="file"><br>
+                        <label id="select">Color:</label><br><input type="color" name="color"><br>
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Select</h2>
+            <p>The tag is used within a form for defining a select list</p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;legend&gt;Select&lt;/legend&gt;
+	&lt;form&gt;
+		&lt;label&gt;Branch:&lt;/label&gt;&lt;br&gt;
+		&lt;select&gt;
+			&lt;option value=&quot;CSE&quot; selected&gt;CSE&lt;/option&gt;
+			&lt;option value=&quot;IT&quot;&gt;IT&lt;/option&gt;
+		&lt;/select&gt;&lt;br&gt;
+		&lt;input type=&quot;submit&quot; name=&quot;submit&quot;&gt;
+	&lt;/form&gt;
+&lt;/fieldset&gt;
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>Select</legend>
+                    <form>
+                        <label>Branch:</label><br>
+                        <select>
+                            <option value="CSE" selected>CSE</option>
+                            <option value="IT">IT</option>
+                        </select><br>
+                        <input id="datalist" type="submit" name="submit">
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Datalist</h2>
+            <p>The tag specifies set of options for &lt;input&gt; element.</p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;legend&gt;Datalist&lt;/legend&gt;
+	&lt;form&gt;
+		&lt;label&gt;Enter Language of choice:&lt;/label&gt;
+		&lt;input list = &quot;langs&quot;&gt;
+			&lt;datalist id = &quot;langs&quot;&gt;
+			&lt;option value = &quot;C&quot;&gt;
+			&lt;option value = &quot;C++&quot;&gt;
+			&lt;option value = &quot;Python&quot;&gt;
+			&lt;option value = &quot;Java&quot;&gt;
+			&lt;option value = &quot;GO&quot;&gt;
+	&lt;/form&gt;
+&lt;/datalist&gt;
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>Datalist</legend>
+                    <form>
+                        <label id="textarea">Enter Language of choice:</label>
+                        <input list="langs">
+                        <datalist id="langs">
+                            <option value="C">
+                            <option value="C++">
+                            <option value="Python">
+                            <option value="Java">
+                            <option value="GO">
+                        </datalist>
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+            <h2>Textarea</h2>
+            <p>This tag is used within a form to declare a textarea element - a control that allows the user to input
+                text over multiple rows.</p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;fieldset&gt;
+	&lt;legend&gt;Textarea&lt;/legend&gt;
+	&lt;form&gt;
+		&lt;label&gt;Enter comments:&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+		&lt;textarea&gt;&lt;/textarea&gt;
+	&lt;/form&gt;
+&lt;/fieldset&gt;
+    			</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <fieldset>
+                    <legend>Textarea</legend>
+                    <form>
+                        <label>Enter comments:</label><br><br>
+                        <textarea></textarea>
+                    </form>
+                </fieldset>
+            </div><br><br>
+
+        </div>
+        <footer id="footer">
+            Created by:<br>
+            B418034 &nbsp&nbsp
+            B418055 &nbsp&nbsp
+            B418056 &nbsp&nbsp
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
