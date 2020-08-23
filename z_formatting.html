@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formatting</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <h1>HTML Tutorial</h1>
+        </div>
+        <div class="right"><img src="logo1.png" alt=""></div>
+
+    </div>
+    <div class="sidenav">
+        <a href="z_quiz1.html"><b>QUIZ 1</b></a>
+        <a href="z_quiz2.html"><b>QUIZ 2</b></a>
+        <a href="z_assignments.html"><b>ASSIGNMENTS</b></a>
+        <a><em>&nbsp---&nbspCONTENT&nbsp---&nbsp&nbsp</em> </a>
+
+        <a href="index.html">Introduction</a>
+        <a href="z_editors.html">HTML Editors</a>
+        <a href="z_basic-tags.html">Basic HTML Tags</a>
+        <a class="subtag" href="z_basic-tags.html#headtag">Heading Tags</a>
+        <a class="subtag" href="z_basic-tags.html#paratag">Paragraph Tags</a>
+        <a class="subtag" href="z_basic-tags.html#lbtag">Line Break Tag</a>
+        <a class="subtag" href="z_basic-tags.html#horline">Horizontal Lines</a>
+        <a class="subtag" href="z_basic-tags.html#presfor">Preserve Formatting</a>
+        <a href="z_links.html">Links</a>
+        <a href="z_img.html">Images</a>
+        <a class="active" href="z_formatting.html">Formatting</a>
+        <a href="z_tables.html">Tables</a>
+        <a class="subtag" href="z_tables.html#heading">Heading</a>
+        <a class="subtag" href="z_tables.html#colspan">Colspan and Rowspan</a>
+        <a class="subtag" href="z_tables.html#backgrounds">Backgrounds</a>
+        <a class="subtag" href="z_tables.html#height">Height and Width</a>
+        <a class="subtag" href="z_tables.html#header">Header, Body, and Footer</a>
+        <a href="z_lists.html">Lists</a>
+        <a class="subtag" href="z_lists.html">Unordered List</a>
+        <a class="subtag" href="z_lists.html#typeul">UL Types</a>
+        <a class="subtag" href="z_lists.html#ol">Ordered List</a>
+        <a class="subtag" href="z_lists.html#typeol">OL Types</a>
+        <a href="z_div-span-form.html">Div</a>
+        <a href="z_div-span-form.html#span">Span</a>
+        <a href="z_div-span-form.html#form">Forms</a>
+        <a class="subtag" href="z_div-span-form.html#fieldset">Fieldset</a>
+        <a class="subtag" href="z_div-span-form.html#legend">Legend</a>
+        <a class="subtag" href="z_div-span-form.html#label">Label</a>
+        <a class="subtag" href="z_div-span-form.html#input">Input</a>
+        <a class="subtag" href="z_div-span-form.html#select">Select</a>
+        <a class="subtag" href="z_div-span-form.html#datalist">Datalist</a>
+        <a class="subtag" href="z_div-span-form.html#textarea">Textarea</a>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>&lt;b&gt;</h2>
+            <p>This tag specifies bold text.</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+&lt;b&gt;Hello&lt;/b&gt;	            	
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <b>Hello</b>
+            </div>
+
+            <h2>&lt;i&gt;</h2>
+            <p>This tag is used to display the content in italic.</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+&lt;i&gt;My name is HTML&lt;/i&gt;	            	
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <i>My name is HTML</i>
+            </div>
+
+            <h2>sub</h2>
+            <p>This tag is used for defining subscript text</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+x&lt;sub&gt;2&lt;/sub&gt; - x&lt;sub&gt;1&lt;/sub&gt; = x&lt;sub&gt;0&lt;/sub&gt;
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                x<sub>2</sub> - x<sub>1</sub> = x<sub>0</sub>
+            </div>
+
+            <h2>sup</h2>
+            <p>This tag is used for defining superscript text</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+x&lt;sup&gt;2&lt;/sup&gt; - y&lt;sup&gt;1&lt;/sup&gt; = 5&lt;sup&gt;2&lt;/sup&gt;
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                x<sup>2</sup> - y<sup>1</sup> = 5<sup>2</sup>
+            </div>
+
+            <h2>del</h2>
+            <p>This tag is used for markup of deleted text.</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+I am &lt;del&gt;CSS&lt;/del&gt; HTML.     	
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                I am <del>CSS</del> HTML.
+            </div>
+
+            <h2>ins</h2>
+            <p>This tag is used to indicate newly inserted text.</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+I am &lt;ins&gt;HTML 5&lt;/ins&gt;	            	
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                I am <ins>HTML 5</ins>
+            </div>
+
+            <h2>mark</h2>
+            <p>This tag specifies a text highlighted for reference purposes, that is for its relevance in another
+                context</p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+HTML is the &lt;mark&gt;foundation stone&lt;/mark&gt; of web.
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                HTML is the <mark>foundation stone</mark> of web.
+            </div>
+
+            <h2>iframe</h2>
+            <p>
+                You can define an inline frame with HTML tag. The tag is not somehow related to tag, instead, it can
+                appear anywhere in your document. The tag defines a rectangular region within the document in which the
+                browser can display a separate document, including scrollbars and borders. An inline frame is used to
+                embed another document within the current HTML document.<br><br>The src attribute is used to specify the
+                URL of the document that occupies the inline frame. It pops up the text if it is not supported.
+            </p>
+            <h3>For example:</h3>
+            <pre>
+	            <code>
+&lt;iframe src = &quot;logo.svg&quot; width = &quot;555&quot; height = &quot;200&quot;&gt;
+    Sorry your browser does not support inline frames.
+&lt;/iframe&gt;	            	
+	            </code>
+            </pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <iframe src="logo.svg" width="555" height="200">
+                    Sorry your browser does not support inline frames.
+                </iframe>
+            </div>
+            <footer id="footer">
+                Created by:<br>
+                B418034 &nbsp&nbsp
+                B418055 &nbsp&nbsp
+                B418056 &nbsp&nbsp
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
