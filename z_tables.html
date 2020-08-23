@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tables</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <h1>HTML Tutorial</h1>
+        </div>
+        <div class="right"><img src="logo1.png" alt=""></div>
+
+    </div>
+    <div class="sidenav">
+        <a href="z_quiz1.html"><b>QUIZ 1</b></a>
+        <a href="z_quiz2.html"><b>QUIZ 2</b></a>
+        <a href="z_assignments.html"><b>ASSIGNMENTS</b></a>
+        <a><em>&nbsp---&nbspCONTENT&nbsp---&nbsp&nbsp</em> </a>
+
+        <a href="index.html">Introduction</a>
+        <a href="z_editors.html">HTML Editors</a>
+        <a href="z_basic-tags.html">Basic HTML Tags</a>
+        <a class="subtag" href="z_basic-tags.html#headtag">Heading Tags</a>
+        <a class="subtag" href="z_basic-tags.html#paratag">Paragraph Tags</a>
+        <a class="subtag" href="z_basic-tags.html#lbtag">Line Break Tag</a>
+        <a class="subtag" href="z_basic-tags.html#horline">Horizontal Lines</a>
+        <a class="subtag" href="z_basic-tags.html#presfor">Preserve Formatting</a>
+        <a href="z_links.html">Links</a>
+        <a href="z_img.html">Images</a>
+        <a href="z_formatting.html">Formatting</a>
+
+        <a class="active" href="z_tables.html">Tables</a>
+        <a class="subtag" href="z_tables.html#heading">Heading</a>
+        <a class="subtag" href="z_tables.html#colspan">Colspan and Rowspan</a>
+        <a class="subtag" href="z_tables.html#backgrounds">Backgrounds</a>
+        <a class="subtag" href="z_tables.html#height">Height and Width</a>
+        <a class="subtag" href="z_tables.html#header">Header, Body, and Footer</a>
+        <a href="z_lists.html">Lists</a>
+        <a class="subtag" href="z_lists.html">Unordered List</a>
+        <a class="subtag" href="z_lists.html#typeul">UL Types</a>
+        <a class="subtag" href="z_lists.html#ol">Ordered List</a>
+        <a class="subtag" href="z_lists.html#typeol">OL Types</a>
+        <a href="z_div-span-form.html">Div</a>
+        <a href="z_div-span-form.html#span">Span</a>
+        <a href="z_div-span-form.html#form">Forms</a>
+        <a class="subtag" href="z_div-span-form.html#fieldset">Fieldset</a>
+        <a class="subtag" href="z_div-span-form.html#legend">Legend</a>
+        <a class="subtag" href="z_div-span-form.html#label">Label</a>
+        <a class="subtag" href="z_div-span-form.html#input">Input</a>
+        <a class="subtag" href="z_div-span-form.html#select">Select</a>
+        <a class="subtag" href="z_div-span-form.html#datalist">Datalist</a>
+        <a class="subtag" href="z_div-span-form.html#textarea">Textarea</a>
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>Tables</h2>
+            <p>
+                The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows
+                and columns of cells.
+
+                The HTML tables are created using the &lt;table&gt; tag in which the &lt;tr&gt; tag is used to create
+                table rows and &lt;td&gt; tag is used to create data cells. The elements under &lt;td&gt; are regular
+                and left aligned by default
+            </p>
+            <h3>For example:</h3>
+            <pre>
+    			<code>          
+&lt;table border = &quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+                             
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <table border="1">
+                    <tr>
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Column 1</td>
+                        <td>Row 2, Column 2</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <p id="heading">
+                Here, the border is an attribute of &lt;table&gt; tag and it is used to put a border across all the
+                cells. If you do not need a border, then you can use border = &quot;0&quot;.
+            </p><br>
+
+            <h2>Table Heading</h2>
+            <p>
+                Table heading can be defined using &lt;th&gt; tag. This tag will be put to replace &lt;td&gt; tag, which
+                is used to represent actual data cell. Normally you will put your top row as table heading as shown
+                below, otherwise you can use &lt;th&gt; element in any row. Headings, which are defined in &lt;th&gt;
+                tag are centered and bold by default.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;table border = &quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Salary&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ramesh Raman&lt;/td&gt;
+        &lt;td&gt;5000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+        &lt;td&gt;7000&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+
+                <body>
+                    <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Salary</th>
+                        </tr>
+                        <tr>
+                            <td>Ramesh Raman</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr id="colspan">
+                            <td>Shabbir Hussein</td>
+                            <td>7000</td>
+                        </tr>
+                    </table>
+            </div><br><br>
+
+            <h2>Colspan and Rowspan Attributes</h2>
+            <p>
+                You will use colspan attribute if you want to merge two or more columns into a single column. Similar
+                way you will use rowspan if you want to merge two or more rows.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;table border = &quot;1&quot;&gt;
+    &lt;tr&gt;
+       &lt;th&gt;Column 1&lt;/th&gt;
+       &lt;th&gt;Column 2&lt;/th&gt;
+       &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td rowspan = &quot;2&quot;&gt;Row 1 Cell 1&lt;/td&gt;
+       &lt;td&gt;Row 1 Cell 2&lt;/td&gt;
+       &lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+       &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td colspan = &quot;3&quot;&gt;Row 3 Cell 1&lt;/td&gt;
+    &lt;/tr&gt;
+ &lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <table border="1">
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Row 1 Cell 1</td>
+                        <td>Row 1 Cell 2</td>
+                        <td>Row 1 Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Cell 2</td>
+                        <td>Row 2 Cell 3</td>
+                    </tr>
+                    <tr id="backgrounds">
+                        <td colspan="3">Row 3 Cell 1</td>
+                    </tr>
+                </table>
+            </div>
+            <br><br>
+
+            <h2>Tables Backgrounds</h2>
+            <p>
+                You can set table background using one of the following two ways −
+
+                bgcolor attribute − You can set background color for whole table or just for one cell.
+
+                background attribute − You can set background image for whole table or just for one cell.
+
+                You can also set border color also using bordercolor attribute.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;table border = &quot;1&quot; bordercolor = &quot;green&quot; bgcolor = &quot;yellow&quot;&gt;
+    &lt;tr&gt;
+       &lt;th&gt;Column 1&lt;/th&gt;
+       &lt;th&gt;Column 2&lt;/th&gt;
+       &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td rowspan = &quot;2&quot;&gt;Row 1 Cell 1&lt;/td&gt;
+       &lt;td&gt;Row 1 Cell 2&lt;/td&gt;
+       &lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+       &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td colspan = &quot;3&quot;&gt;Row 3 Cell 1&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <table border="1" bordercolor="green" bgcolor="brown">
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Row 1 Cell 1</td>
+                        <td>Row 1 Cell 2</td>
+                        <td>Row 1 Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Cell 2</td>
+                        <td>Row 2 Cell 3</td>
+                    </tr>
+                    <tr id="height">
+                        <td colspan="3">Row 3 Cell 1</td>
+                    </tr>
+                </table>
+            </div><br><br>
+
+            <h2>Table Height and Width</h2>
+            <p>
+                You can set a table width and height using width and height attributes. You can specify table width or
+                height in terms of pixels or in terms of percentage of available screen area.
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;table border = &quot;1&quot; width = &quot;800&quot; height = &quot;150&quot;&gt;
+    &lt;tr&gt;
+       &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+       &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+       &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+       &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <table border="1" width="800" height="150">
+                    <tr>
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                    </tr>
+                    <tr id="header">
+                        <td>Row 2, Column 1</td>
+                        <td>Row 2, Column 2</td>
+                    </tr>
+                </table>
+            </div><br><br>
+            <h2>Table Header, Body, and Footer</h2>
+            <p>
+                Tables can be divided into three portions &minus; a header, a body, and a foot. The head and foot are
+                rather similar to headers and footers in a word-processed document that remain the same for every page,
+                while the body is the main content holder of the table.
+
+                The three elements for separating the head, body, and foot of a table are &minus;
+
+                &lt;thead&gt; &minus; to create a separate table header.
+
+                &lt;tbody&gt; &minus; to indicate the main body of the table.
+
+                &lt;tfoot&gt; &minus; to create a separate table footer.
+
+                A table may contain several &lt;tbody&gt; elements to indicate different pages or groups of data. But it
+                is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;
+            </p>
+            <h3>For Example:</h3>
+            <pre>
+    			<code>
+&lt;table border = &quot;1&quot; width = &quot;100%&quot;&gt;
+    &lt;thead&gt;
+       &lt;tr&gt;
+          &lt;td colspan = &quot;4&quot;&gt;This is the head of the table&lt;/td&gt;
+       &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tfoot&gt;
+       &lt;tr&gt;
+          &lt;td colspan = &quot;4&quot;&gt;This is the foot of the table&lt;/td&gt;
+       &lt;/tr&gt;
+    &lt;/tfoot&gt;
+    &lt;tbody&gt;
+       &lt;tr&gt;
+          &lt;td&gt;Cell 1&lt;/td&gt;
+          &lt;td&gt;Cell 2&lt;/td&gt;
+          &lt;td&gt;Cell 3&lt;/td&gt;
+          &lt;td&gt;Cell 4&lt;/td&gt;
+       &lt;/tr&gt;
+    &lt;/tbody&gt;  
+&lt;/table&gt;</code>
+    		</pre>
+            <h3>Becomes:</h3>
+            <div class="output">
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <td colspan="4">This is the head of the table</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">This is the foot of the table</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br><br>
+        </div>
+        <footer id="footer">
+            Created by:<br>
+            B418034 &nbsp&nbsp
+            B418055 &nbsp&nbsp
+            B418056 &nbsp&nbsp
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
