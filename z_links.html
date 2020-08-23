@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Links</title>
+</head>
+
+<body>
+    <div id="navbar">
+
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <h1>HTML Tutorial</h1>
+        </div>
+        <div class="right"><img src="logo1.png" alt=""></div>
+
+    </div>
+    <div class="sidenav">
+        <a href="z_quiz1.html"><b>QUIZ 1</b></a>
+        <a href="z_quiz2.html"><b>QUIZ 2</b></a>
+        <a href="z_assignments.html"><b>ASSIGNMENTS</b></a>
+        <a><em>&nbsp---&nbspCONTENT&nbsp---&nbsp&nbsp</em> </a>
+
+        <a href="index.html">Introduction</a>
+        <a href="#">HTML Editors</a>
+        <a href="z_basic-tags.html">Basic HTML Tags</a>
+        <a class="subtag" href="z_basic-tags.html#headtag">Heading Tags</a>
+        <a class="subtag" href="z_basic-tags.html#paratag">Paragraph Tags</a>
+        <a class="subtag" href="z_basic-tags.html#lbtag">Line Break Tag</a>
+        <a class="subtag" href="z_basic-tags.html#horline">Horizontal Lines</a>
+        <a class="subtag" href="z_basic-tags.html#presfor">Preserve Formatting</a>
+        <a class="active" href="z_links.html">Links</a>
+        <a href="z_img.html">Images</a>
+        <a href="z_formatting.html">Formatting</a>
+
+        <a href="z_tables.html">Tables</a>
+        <a class="subtag" href="z_tables.html#heading">Heading</a>
+        <a class="subtag" href="z_tables.html#colspan">Colspan and Rowspan</a>
+        <a class="subtag" href="z_tables.html#backgrounds">Backgrounds</a>
+        <a class="subtag" href="z_tables.html#height">Height and Width</a>
+        <a class="subtag" href="z_tables.html#header">Header, Body, and Footer</a>
+        <a href="z_lists.html">Lists</a>
+        <a class="subtag" href="z_lists.html">Unordered List</a>
+        <a class="subtag" href="z_lists.html#typeul">UL Types</a>
+        <a class="subtag" href="z_lists.html#ol">Ordered List</a>
+        <a class="subtag" href="z_lists.html#typeol">OL Types</a>
+        <a href="z_div-span-form.html">Div</a>
+        <a href="z_div-span-form.html#span">Span</a>
+        <a href="z_div-span-form.html#form">Forms</a>
+        <a class="subtag" href="z_div-span-form.html#fieldset">Fieldset</a>
+        <a class="subtag" href="z_div-span-form.html#legend">Legend</a>
+        <a class="subtag" href="z_div-span-form.html#label">Label</a>
+        <a class="subtag" href="z_div-span-form.html#input">Input</a>
+        <a class="subtag" href="z_div-span-form.html#select">Select</a>
+        <a class="subtag" href="z_div-span-form.html#datalist">Datalist</a>
+        <a class="subtag" href="z_div-span-form.html#textarea">Textarea</a>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>HTML Links</h2>
+            <p>A webpage can contain various links that take you directly to other pages and even specific parts of a
+                given page.
+                These links are known as hyperlinks.</p>
+            <p>Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus
+                you can
+                create hyperlinks using text, images or email available on a webpage.</p>
+
+            <h2>HTML Text Links</h2>
+            <p>A link is specified using HTML tag &lt;a&gt;. This tag is called <b>anchor tag</b> and anything between
+                the opening
+                &lt;a&gt; tag and the closing &lt;/a&gt; tag becomes part of the link and a user can click that part to
+                reach to
+                the linked document. Following is the simple syntax to use &lt;a&gt; tag.</p><br>
+            <pre>&lt;a href = "Document URL" ... attributes-list&gt;Link Text&lt;/a&gt;</pre>
+
+
+            <h3>For example:</h3><br>
+            <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+   
+                  &lt;head&gt;
+                    &lt;title&gt;Hyperlink Example&lt;/title&gt;
+                  &lt;/head&gt;
+	
+                  &lt;body&gt;
+                    &lt;p&gt;Click following link&lt;/p&gt;
+                    &lt;a href = "https://www.iiit-bh.ac.in/" target = "_self"&gt;IIIT BBSR&lt;/a&gt;
+                  &lt;/body&gt;
+	
+                &lt;/html&gt;
+            </code>
+            </pre>
+            <br> <br>
+            <p>This will produce the following result, where you can click on the link generated to reach to the home
+                page of IIIT BBSR website (in this example).</p>
+            <br>
+            <div class="output">
+                <p>Click following link</p>
+                <a href=https://www.iiit-bh.ac.in/" target="_self">IIIT BBSR</a>
+            </div>
+            <br><br>
+
+            <h2>HTML Email Links</h2>
+            <p>
+                It is not difficult to put an HTML email link on your webpage but it can cause unnecessary spamming
+                problem for your email account.
+                There are people, who can run programs to harvest these types of emails and later use them for spamming
+                in various ways.
+            </p>
+            <p>
+                HTML <b>&lt;a&gt;</b> tag provides you option to specify an email address to send an email. While using
+                &lt;a&gt; tag as an
+                email tag, you will use <b>mailto: email address</b> along with <i>href</i> attribute. Following is the
+                syntax of using
+                <b>mailto</b> instead of using http.
+            </p>
+            <br>
+            <pre>&lt;a href = "mailto: abc@example.com"&gt;Send Email&lt;/a&gt;</pre>
+            <br> <br>
+            <p>This code will generate the following link which you can use to send email.</p>
+            <div class="output">
+                <a href="mailto:abc@example.com">Send Email</a>
+            </div>
+            <br>
+            <p>
+                Now, if a user clicks this link, it launches one Email Client (like Lotus Notes, Outlook Express etc. )
+                installed on your user's computer.
+                There is another risk to use this option to send email because if user do not have email client
+                installed on their computer then it would
+                not be possible to send email.</p>
+            <br><br>
+
+
+        </div>
+        <footer id="footer">
+            Created by:<br>
+            B418034 &nbsp&nbsp
+            B418055 &nbsp&nbsp
+            B418056 &nbsp&nbsp
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
